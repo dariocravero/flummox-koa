@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+COMPILE_IGNORE='node_modules/**'
+
+./node_modules/.bin/babel $1 --ignore $COMPILE_IGNORE --extensions .es6 --out-dir . .
